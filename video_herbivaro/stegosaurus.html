@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stegosaurus</title>
+
+    <style>
+      body {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url(fundo/1500.jpg);
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15vh;
+        flex-direction: column;
+        margin: 2px;
+        padding: 0;
+      }
+
+      h1 {
+        margin-top: -90px;
+        border-radius: 63px;
+        background: #c4e684;
+        box-shadow: -21px -21px 42px #95af64, 21px 21px 42px #f3ffa4;
+        width: 300px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a {
+        display: flex;
+        background: #31321c;
+        border-radius: 60px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        width: 50px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: -20px;
+      }
+
+      .video {
+        margin-top: 15px;
+        height: 400px;
+        width: 650px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .video {
+          height: 300px;
+          width: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stegosaurus</h1>
+    <a href="http://127.0.0.1:5500/herb.html">Voltar</a>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZXbmWywKcz4?si=BoBN8ihvdG9sJZBv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </body>
+</html>

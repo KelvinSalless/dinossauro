@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(Imagens/1500.jpg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px 50px;
+  flex-wrap: wrap; /*Permite que os item quebrem*/
+  padding: 100px 50px; /*Deixando todo o conteudo do container dentro dele*/
+}
+
+.container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 320px;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0.15);
+  background: var(--cor);
+  transition: 0.5s;
+  color: var(--cor);
+}
+
+.container .card:hover {
+  height: 400px;
+}
+
+.container .card .caixaimg {
+  position: absolute;
+  top: 20px;
+  width: 335px;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: .5;
+}
+
+.container .card .caixaimg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .conteudo {
+  position: absolute;
+  top: 280px;
+  width: 100%;
+  height: 35px;
+  padding: 0 30px;
+  color: var(--cor);
+  overflow: hidden;
+  text-align: center;
+  transition: .5s;
+}
+
+.container .card:hover .conteudo {
+    top: 150px;
+    height: 250px;
+}
+
+.container .card:hover .caixaimg {
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15pc 45pc rgba(0, 0, 0,.2);
+}
+
+.container .card .conteudo h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.container .card .conteudo a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 500;
+    border-radius: 8px;
+    background: #fff;
+    color: black;
+}
+
+.container .card .conteudo a:hover {
+    background: var(--cor);
+    transition: .5s;
+}

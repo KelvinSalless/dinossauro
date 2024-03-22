@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <link rel="shortcut icon" href="Imagens/6067.jpg" type="image/x-icon">
+    <title>Dinoimages</title>
+  </head>
+  <body>
+    <div class="main-login">
+      <!--Encloba tudo, tanto a parte da direita quanto da esquer, tudo dentro dela-->
+      <div class="left-login">
+        <!--Lado esquerdo da página-->
+        <h1>Entre nessa <strong>aventura</strong> com a gente!</h1>
+        <img src="Dino.svg" class="left-login-image" alt="Dinossauro" />
+      </div>
+      <div class="right-login">
+        <!--Lado direito da página-->
+        <div class="card-login">
+          <!--É como se fosse uma carta e dentro está Login, senha e botão-->
+          <h1>LOGIN</h1>
+          <p>do explorador</p>
+          <div class="textfild">
+            <!--Entrada de usuário-->
+            <label for="usuario">Usuário</label>
+            <input
+              type="text"
+              name="usuario"
+              placeholder="Usuário"
+              id="usuario"
+            />
+          </div>
+          <div class="textfild">
+            <!--Entrada de senha-->
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              name="senha"
+              placeholder="Senha"
+              id="senha"
+            />
+          </div>
+          <button class="btn-login" onclick="logar(); return false">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

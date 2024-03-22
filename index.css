@@ -1,0 +1,154 @@
+body {
+  margin: 0; /*Tem que colocar assim pois o navegador ja vem com borda de fabrica*/
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.main-login {
+  width: 100vw; /*Largura da tela toda, está oculpando 100%*/
+  height: 100vh; /*Altura da tela toda, está oculpando 100%*/
+  background: #201b2c;
+  display: flex; /*Deixar um ao lado do outro*/
+  justify-content: center; /*Tudo ficará no centro*/
+  align-items: center;
+}
+
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /*Deixar tudo de baixo do outro mesmo usando o flex*/
+}
+
+.left-login h1 {
+  font-size: 2vw;
+  color: white;
+}
+
+.left-login strong {
+  color: #00ff88;
+  text-transform: uppercase;
+}
+
+.left-login-image {
+  width: 35vw;
+}
+
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%; /*Vai pegar o tamanho que está dentro da div*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px; /*Margem de dentro do card*/
+  background: #2f2841;
+  border-radius: 20px; /*Borda do card*/
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login h1 {
+  color: #00ff88;
+  font-weight: 800; /*Borda da letra*/
+  margin: 0;
+}
+
+.card-login p {
+  color: white;
+  margin: 0;
+}
+
+.textfild {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.textfild input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none; /*Tirar a caixinha que aparece quando clica no input*/
+  box-sizing: border-box; /*Div filho não ultrapassa a div pai*/
+}
+
+.textfild label {
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+
+.textfild input::placeholder {
+  color: #f0ffffde;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none; /*Tirar a caixinha que aparece quando clica no input*/
+  text-transform: uppercase; /*Transformando todas as letras em maiuscula*/
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Para a tela do celular*/
+  .main-login {
+    flex-direction: column; /*Quando a tela diminuir, tudo vai em baixo do outro*/
+  }
+
+  .left-login h1 {
+    display: none; /*Quando a tela diminuir o titulo some*/
+  }
+
+  .left-login {
+    /*Ocupando todo o espaço*/
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-login {
+    /*Ocupando todo o espaço*/
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-login-image {
+    width: 91vw; /*Tamanho da imagem*/
+  }
+
+  .card-login {
+    width: 90%;
+  }
+}
